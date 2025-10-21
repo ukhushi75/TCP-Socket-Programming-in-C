@@ -8,29 +8,32 @@ A common communication protocol called TCP outlines how to create and preserve a
 Sockets serve as the communication endpoints between client and server applications in this project.  The client starts the conversation while the server waits for new connections.  Once connected, the send() and recv() system methods can be used to send and receive
 
 
-How to Run the Project
+**How to Run the Project**
 
 Ensure all nodes are connected to the same LAN network (wired or wireless).
 
 Identify the IP addresses of each node using the command:
 
-ifconfig
+**ifconfig**
 
 
 Update the IP addresses in the client.c file to match the nodes that need to communicate.
 
 Compile both source files using a C compiler:
 
-gcc server.c -o server
-gcc client.c -o client
+**gcc server.c -o server**
+**gcc client.c -o client**
 
 
 Run the compiled executables in separate terminals on different nodes:
 
-./server
-./client
+**./server**
+**./client**
 
 
 When running the server, provide an acceptable port number for communication.
 
 Use the client’s menu-driven interface to connect to other nodes, send messages, or transfer files.
+
+<img width="1024" height="1536" alt="Socket project flow chart" src="https://github.com/user-attachments/assets/b1454680-82ab-4459-b103-fbe1fa4595cd" />
+
